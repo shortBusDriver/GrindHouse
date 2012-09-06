@@ -10,7 +10,7 @@ console.log("I want to buy Guild Wars 2");
 
 
 
-
+// for loop
 
 
 	
@@ -22,6 +22,7 @@ console.log("I want to buy Guild Wars 2");
 
 		console.log("I grabbed Guild Wars 2 and went purchase it");
 
+ // number function
  
  var change = function(gP, m) {
 	change = ( gP - m);
@@ -33,7 +34,7 @@ console.log("I want to buy Guild Wars 2");
 
 
 
-
+// bollean
 
 var goodName= true, createdChar= true ;
 	if (createdChar && goodName){
