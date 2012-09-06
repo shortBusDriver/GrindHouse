@@ -1,5 +1,10 @@
 // where can I buy guild Wars 2?
 
+var name = "GW2";
+var nameL = "Monti";
+var number = 5;
+var levelArray = [1,2,3,4,5,6];
+var options = [4,true];
 
 
 
@@ -15,13 +20,17 @@ console.log("I want to buy Guild Wars 2");
 
 	
 	for ( var miles = 10; miles > 0 ; miles--) {
-		console.log( miles + " Miles Left to get to GameStop");
-	};
+				
+	  console.log( miles + " Miles Left to get to GameStop");
+	  	
+				
+	 
+	 };
 		console.log("I have arrived at GameStop");
-
+				
 
 		console.log("I grabbed Guild Wars 2 and went purchase it");
-
+		     
  // number function
  
  var change = function(gP, m) {

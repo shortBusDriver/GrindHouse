@@ -1,12 +1,12 @@
 
         var tankNames = ["Shark Tank", "Sting Ray Tank", "Dolphin Tank", "Fish Tank"],
-	minutesPerTank = [60, 15, 25, 30],
+	minutesPerTank = [60, 15, 25, 20],
 	kidNames = ["Braden", "Rhys", "Zoe"];
         var visitTank = function(whatTank) {
             var tankName = tankNames[whatTank],
             minutesThisTank = minutesPerTank[tankNumber];
             console.log([kidNames] + " wanted us to visit the " + tankName + " for " + minutesThisTank + " minutes. So I set the timer on my watch!");
-            for (var minutes = 0; minutes < minutesThisTank; minutes += 3) {
+            for (var minutes = 0; minutes < minutesThisTank; minutes += 7) {
                     var minutesRemain = minutesThisTank - minutes;
                     console.log("We have " + minutesRemain + " minutes left. " + minutes + " minutes have past.");
             }
