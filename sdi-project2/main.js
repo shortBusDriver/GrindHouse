@@ -1,4 +1,5 @@
-// where can I buy guild Wars 2?
+// Joshua Monti
+// SDI 1207
 
 
 // Variables
@@ -17,16 +18,15 @@ var options = [4,true];
 var  totalWait = function(wait, beta) {
 	 var years = wait + beta; 
 	 
-	 console.log(" I waited " + years, "years", "For"  + name);
+	 console.log("I waited " + years, "years", "For"  + name);
 };
 
 
 
 
+// Number/While Function
 
-//while Function
-
-	var levelCountDown = function (){
+var levelCountDown = function (){
 		
 		var level = 80;
 			
@@ -34,15 +34,15 @@ var  totalWait = function(wait, beta) {
 			console.log(level + " is a level in " + name)
 			level = level - 10;
 			
-			if (level > 0){
+			if (level > 1){
 				
 				
 			} else {
-				console.log(" 1 is the lowest level in " + name);
+				
 			};
 			
 			};
-		
+			return level; 
 	};
 	
 
@@ -95,7 +95,9 @@ var goodName= true, createdChar= true ;
 // Main Code - Function calls
 
 totalWait(1, 3);
-levelCountDown();
+
+var levels = levelCountDown(10);
+console.log("The Lowest Level in" + name, "is:", 1);
 
 
 
