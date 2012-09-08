@@ -1,16 +1,29 @@
 // where can I buy guild Wars 2?
 
+
+// Variables
+
+
 var name = "GW2";
 var nameL = "Monti";
-var number = 5;
+var miles = 10;
 var levelArray = [1,2,3,4,5,6];
 var options = [4,true];
 
 
 
+//Procedure
+
+var  totalWait = function(wait, beta) {
+	 var years = wait + beta; 
+	 console.log(" I waited " + years, "years", "For" + name);
+};
 
 
-console.log("I want to buy Guild Wars 2");
+
+
+
+	console.log("I want to buy Guild Wars 2");
 	
 
 
@@ -34,9 +47,9 @@ console.log("I want to buy Guild Wars 2");
  // number function
  
  var change = function(gP, m) {
-	change = ( gP - m);
+	 change = ( gP - m);
 		return change;
- ;} 
+ }; 
 	
 	console.log(" My Change is " + change(60.73, 100));
 	
@@ -55,6 +68,9 @@ var goodName= true, createdChar= true ;
 
 
 
+// Main Code - Function calls
+
+totalWait(1, 3)
 
 
 
