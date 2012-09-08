@@ -54,15 +54,18 @@ var levelCountDown = function (){
 
 // for loop
 
-
+var milesLeft = function() {
 	
 	for ( var miles = 10; miles > 0 ; miles--) {
 				
-	  console.log( miles + " Miles Left to get to GameStop");
+	  	console.log( miles + " Miles Left to get Home");
 	  	
 				
 	 
 	 };
+	  	return
+	};
+		
 		console.log("I have arrived at GameStop");
 				
 
@@ -75,7 +78,7 @@ var levelCountDown = function (){
 		return change;
  }; 
 	
-	console.log(" My Change is " + change(60.73, 100));
+		console.log(" My Change is " + change(60.73, 100));
 	
 
 
@@ -84,8 +87,8 @@ var levelCountDown = function (){
 
 var goodName= true, createdChar= true ;
 	if (createdChar && goodName){
-	console.log( "Welcome to GW2");
-		
+		console.log( "Welcome to GW2");
+			
 	}  else {
 		console.log("Try a new name");
 	};
@@ -94,10 +97,14 @@ var goodName= true, createdChar= true ;
 
 // Main Code - Function calls
 
+var milesTo = milesLeft();
+
 totalWait(1, 3);
 
-var levels = levelCountDown(10);
-console.log("The Lowest Level in" + name, "is:", 1);
+var levels = levelCountDown();
+	console.log("The Lowest Level in" + name, "is:", 1);
+
+
 
 
 
