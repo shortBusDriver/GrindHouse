@@ -4,10 +4,10 @@
 // Variables
 
 
-var name = "GW2";
+var name = " GW 2";
 var nameL = "Monti";
 var miles = 10;
-var levelArray = [1,2,3,4,5,6];
+var levelArray = [1,2,3,4,5,6,80];
 var options = [4,true];
 
 
@@ -16,15 +16,39 @@ var options = [4,true];
 
 var  totalWait = function(wait, beta) {
 	 var years = wait + beta; 
-	 console.log(" I waited " + years, "years", "For" + name);
+	 
+	 console.log(" I waited " + years, "years", "For"  + name);
 };
 
 
 
 
 
-	console.log("I want to buy Guild Wars 2");
+//while Function
+
+	var levelCountDown = function (){
+		
+		var level = 80;
+			
+		while (level > 0) {
+			console.log(level + " is a level in " + name)
+			level = level - 10;
+			
+			if (level > 0){
+				
+				
+			} else {
+				console.log(" 1 is the lowest level in " + name);
+			};
+			
+			};
+		
+	};
 	
+
+
+
+
 
 
 
@@ -70,7 +94,8 @@ var goodName= true, createdChar= true ;
 
 // Main Code - Function calls
 
-totalWait(1, 3)
+totalWait(1, 3);
+levelCountDown();
 
 
 
