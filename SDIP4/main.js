@@ -6,9 +6,9 @@
 //#1
 // This is a function check to whether or not given email matches the pattern check.
 
- function emailValidCheck(email);{
+ function emailValidCheck(email) {
 	var eaddress = email;
-		var emailPattern = 	/[^a-zA-Z0-9/;
+		var emailPattern = /^[a-zA-Z0-9]+@[gmail]/		
 		if (emailPattern.test(eaddress)) {
 			console.log("Pattern Accepted");
 		
@@ -42,6 +42,13 @@ function urlCheck(urlToCheck){
 		} else {
 			console.log("This is not a  Proper Url");
 		}; 
+		
+			
 };
 
-urlCheck("http//:www.google.com");
+//Problems
+//#1
+emailValidCheck("salt@gmail.com");
+
+//#2
+urlCheck("www.google.com");
