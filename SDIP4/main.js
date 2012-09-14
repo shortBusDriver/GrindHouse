@@ -6,12 +6,20 @@
 //#1
 // This is a function check to whether or not given email matches the pattern check.
 
-/* function emailValidCheck(email);{
+ function emailValidCheck(email);{
 	var eaddress = email;
-		var emailPattern = 	
+		var emailPattern = 	/[^a-zA-Z0-9/;
+		if (emailPattern.test(eaddress)) {
+			console.log("Pattern Accepted");
+		
+		} else {
+			console.log("REJECTED");
+	
+			
+		};
 	
 	
-} */
+}; 
 
 
 
@@ -30,10 +38,10 @@ function urlCheck(urlToCheck){
 	var url = urlToCheck;
 		var urlPattern = /[http][https]/;
 		if 	(urlPattern.test(url)) {
-			console.log("This is a Url");
+			console.log("This is a  Proper Url");
 		} else {
-			console.log("This is not a Url");
+			console.log("This is not a  Proper Url");
 		}; 
 };
 
-urlCheck("www.google.com")
+urlCheck("http//:www.google.com");
