@@ -108,10 +108,10 @@ urlCheck("google"); */
 
 
 //#4
-stringer(42);
+stringer(15);
 
 //#5
-dec(2.9)
+dec(4.6)
 
 //#6
 
