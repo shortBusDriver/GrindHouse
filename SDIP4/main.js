@@ -66,10 +66,15 @@ function urlCheck(urlToCheck){
 
 function stringer(string){
 	var count = string;
-console.log(count.toString());
+	console.log(count.toString());
 };
 
 	
+
+// #5
+
+
+
 
 
 
@@ -86,14 +91,17 @@ console.log(count.toString());
 
 //#1
 emailValidCheck("salt@gmail.com");
+emailValidCheck("salt@hotmail.com");
 
 //#2
-urlCheck("https:www.google.com");
+urlCheck("https//:www.google.com");
+urlCheck("http//:www.google.com");
+urlCheck("google");
 
 //#3
 getDays(new Date(2010, 8 , 23));
 
 //#4
-stringer(52);
+stringer(10);
 
 
