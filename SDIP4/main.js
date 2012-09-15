@@ -72,18 +72,16 @@ function stringer(string){
 	
 
 // #5
+// Money!.
 
 function dec(number) { 
 	var round = number;
-		console.log(round.toFixed(1));
+		  console.log("$",round.toFixed(2));
 };
 
 
 
-
-
-
-
+// #6
 
 
 
@@ -110,9 +108,11 @@ urlCheck("google"); */
 
 
 //#4
-/*stringer(10);*/
+stringer(42);
+
+//#5
+dec(2.9)
 
 //#6
-dec(1.50);
 
 
