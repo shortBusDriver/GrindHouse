@@ -9,7 +9,7 @@
  function emailValidCheck(email) {
 	var eaddress = email;
 		// This checks to make sure Login Email is a Gmail Account.
-	var emailPattern = /^[a-zA-Z0-9]+@[gmail]/		
+	var emailPattern = /^[a-zA-Z0-9]+@[gmail]/ ;		
 		if (emailPattern.test(eaddress)) {
 			console.log("Pattern Accepted");
 		
@@ -45,18 +45,38 @@ function urlCheck(urlToCheck){
 };
 		
 		
-		
-		
+};		
+
+
+// #3
+// Finding Different Dates
+// My fiance' and I anniversary date to present.
+
+ function getDays(testDate) {
+    var dater = testDate;
+    today = new Date(2012, 8, 14);
+    var one_day = 1000 * 60 * 60 * 24;
+    
+    console.log(Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since " + testDate)
+}		
 		
 			
-};
+
+
+
+
+
 
 
 
 
 //Problems
+
 //#1
 emailValidCheck("salt@gmail.com");
 
 //#2
 urlCheck("https:www.google.com");
+
+//3
+getDays(new Date(2010, 8 , 23));
