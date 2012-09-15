@@ -3,7 +3,7 @@
 // Project 4
 
 
-//#1
+// #1
 // This is a function check to whether or not given email matches the pattern check.
 
  function emailValidCheck(email) {
@@ -66,12 +66,17 @@ function urlCheck(urlToCheck){
 
 function stringer(string){
 	var count = string;
-	console.log(count.toString());
+		console.log(count.toString());
 };
 
 	
 
 // #5
+
+function dec(number) { 
+	var round = number;
+		console.log(round.toFixed(1));
+};
 
 
 
@@ -90,18 +95,24 @@ function stringer(string){
 //Problems
 
 //#1
-emailValidCheck("salt@gmail.com");
-emailValidCheck("salt@hotmail.com");
+/* emailValidCheck("salt@gmail.com");
+emailValidCheck("salt@hotmail.com"); */
 
 //#2
+/*
 urlCheck("https//:www.google.com");
 urlCheck("http//:www.google.com");
-urlCheck("google");
+urlCheck("google"); */
+
 
 //#3
-getDays(new Date(2010, 8 , 23));
+/*getDays(new Date(2010, 8 , 23)); */
+
 
 //#4
-stringer(10);
+/*stringer(10);*/
+
+//#6
+dec(1.50);
 
 
