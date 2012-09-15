@@ -24,7 +24,7 @@
 
 
 // #2
-// This check if the givent statement is a Http or Https.
+// This  function check if the given statement is a Http or Https.
 
 function urlCheck(urlToCheck){
 	var url = urlToCheck;
@@ -50,17 +50,29 @@ function urlCheck(urlToCheck){
 
 // #3
 // Finding Different Dates
-// My fiance' and I anniversary date to present.
+// My fiance's and I anniversary date to present.
 
  function getDays(testDate) {
     var dater = testDate;
     today = new Date(2012, 8, 14);
     var one_day = 1000 * 60 * 60 * 24;
     
-    console.log(Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since " + testDate)
-}		
+    console.log(Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate)
+};		
 		
 			
+// #4
+// number to string
+
+function stringer(string){
+	var count = string;
+console.log(count.toString());
+};
+
+	
+
+
+
 
 
 
@@ -78,5 +90,10 @@ emailValidCheck("salt@gmail.com");
 //#2
 urlCheck("https:www.google.com");
 
-//3
+//#3
 getDays(new Date(2010, 8 , 23));
+
+//#4
+stringer(52);
+
+
