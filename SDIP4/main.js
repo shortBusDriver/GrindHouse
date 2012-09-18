@@ -3,6 +3,11 @@
 // Project 4
 
 
+
+
+var myLibrary = function(){
+
+
 // #1
 // This is a function check to whether or not given email matches the pattern check.
 
@@ -11,10 +16,10 @@
 		// This checks to make sure Login Email is a Gmail Account.
 	var emailPattern = /^[a-zA-Z0-9]+@[gmail]/ ;		
 		if (emailPattern.test(eaddress)) {
-			console.log("Pattern Accepted");
+			return true;
 		
 		} else {
-			console.log("REJECTED");
+			return false;
 	
 			
 		};
@@ -26,22 +31,22 @@
 // #2
 // This  function check if the given statement is a Http or Https.
 
-function urlCheck(urlToCheck){
+ function urlCheck(urlToCheck){
 	var url = urlToCheck;
 		var urlPattern = /[http]/;
 		var httPattern = /[https]$/;
 		
 		
 	if 	(urlPattern.test(url)) {
-			console.log("This is a Http");
+			return true;
 		} else {
-			console.log("This is not a Http");
+			return false;
 };	
 	if (httPattern.test(url)) {
-			console.log("This is a Https");
+			return true;
 			
 		} else {
-			console.log("This is not a Https");
+			return false;
 };
 		
 		
@@ -57,7 +62,7 @@ function urlCheck(urlToCheck){
     today = new Date(2012, 8, 14);
     var one_day = 1000 * 60 * 60 * 24;
     
-    console.log(Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate)
+    return (Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate)
 };		
 		
 			
@@ -66,7 +71,7 @@ function urlCheck(urlToCheck){
 
 function stringer(string){
 	var count = string;
-		console.log(count.toString());
+		return(count.toString());
 };
 
 	
@@ -76,43 +81,54 @@ function stringer(string){
 
 function dec(number) { 
 	var round = number;
-		  console.log("$",round.toFixed(2));
-};
+		  return (round.toFixed(2));
+}; 
 
 
 
 // #6
 
+  
+  
+  
+  
+  
+  
+  return {
+	 "emailValidCheck" : emailValidCheck,
+	 "urlCheck" : urlCheck,
+	 "getDays" : getDays,
+	 "stringer" : stringer,
+	 "dec" : dec
+};
 
 
+};
 
 
-
+var newLib = myLibrary();
 
 
 //Problems
 
 //#1
-/* emailValidCheck("salt@gmail.com");
-emailValidCheck("salt@hotmail.com"); */
+console.log(newLib.emailValidCheck("wise@gmail.com"));
 
 //#2
-/*
-urlCheck("https//:www.google.com");
-urlCheck("http//:www.google.com");
-urlCheck("google"); */
+
+console.log(newLib.urlCheck("google.com"));
 
 
 //#3
-/*getDays(new Date(2010, 8 , 23)); */
+console.log(newLib.getDays(new Date(2010, 8 , 23))); 
 
 
 //#4
-stringer(15);
+console.log(newLib.stringer(10));
 
 //#5
-dec(4.6)
+console.log("$",newLib.dec(1.50));
 
-//#6
+
 
 
