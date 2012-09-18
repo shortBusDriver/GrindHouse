@@ -33,8 +33,8 @@ var myLibrary = function(){
 
  function urlCheck(urlToCheck){
 	var url = urlToCheck;
-		var urlPattern = /[http]/;
-		var httPattern = /[https]$/;
+		var urlPattern = /^[http]/;
+		var httPattern = /^[https]$/;
 		
 		
 	if 	(urlPattern.test(url)) {
@@ -94,6 +94,7 @@ function dec(number) {
   
   
   
+  
   return {
 	 "emailValidCheck" : emailValidCheck,
 	 "urlCheck" : urlCheck,
@@ -116,7 +117,7 @@ console.log(newLib.emailValidCheck("wise@gmail.com"));
 
 //#2
 
-console.log(newLib.urlCheck("google.com"));
+console.log(newLib.urlCheck("http:www.google.com"));
 
 
 //#3
