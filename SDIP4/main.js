@@ -22,7 +22,7 @@ var myLibrary = function(){
 			return false;
 	
 			
-		};
+};
 	
 	
 }; 
@@ -62,7 +62,7 @@ var myLibrary = function(){
     today = new Date(2012, 8, 14);
     var one_day = 1000 * 60 * 60 * 24;
     
-    return (Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate);
+    return (Math.ceil((today.getTime() - dater.getTime()) / (one_day))  + testDate);
 };		
 		
 			
@@ -87,7 +87,13 @@ function dec(number) {
 
 
 // #6
+//Phone Validation
 
+ function phone(phoneNumber) {
+		var phoneRegEx = /^[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}$/;
+		var	phoneCheck = phoneRegEx.test(phoneNumber);
+	return phoneCheck;
+};
   
   
   
@@ -100,7 +106,8 @@ function dec(number) {
 	 "urlCheck" : urlCheck,
 	 "getDays" : getDays,
 	 "stringer" : stringer,
-	 "dec" : dec
+	 "dec" : dec,
+	 "phone": phone
 };
 
 
@@ -121,7 +128,7 @@ console.log(newLib.urlCheck("http:www.google.com"));
 
 
 //#3
-console.log(newLib.getDays(new Date(2010, 8 , 23))); 
+console.log("Days have gone by:"+ newLib.getDays(new Date(2010, 8 , 23)) + "Since our wonderful day"); 
 
 
 //#4
@@ -129,6 +136,9 @@ console.log(newLib.stringer(10));
 
 //#5
 console.log("$",newLib.dec(1.50));
+
+//#6
+console.log(newLib.phone("404-4318"));
 
 
 
