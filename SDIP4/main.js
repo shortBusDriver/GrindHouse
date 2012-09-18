@@ -62,7 +62,7 @@ var myLibrary = function(){
     today = new Date(2012, 8, 14);
     var one_day = 1000 * 60 * 60 * 24;
     
-    return (Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate)
+    return (Math.ceil((today.getTime() - dater.getTime()) / (one_day)) + " days have gone by since our wonderful day! " + testDate);
 };		
 		
 			
@@ -81,7 +81,7 @@ function stringer(string){
 
 function dec(number) { 
 	var round = number;
-		  return (round.toFixed(2));
+		  return(round.toFixed(2));
 }; 
 
 
